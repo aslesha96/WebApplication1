@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-app="MyAPP" ng-controller="Patcontroller">
+		<form>
+			UID: <input type="text" ng-model="UID">
+		</form>
+		<br /><br />
+		<form>
+			Gender:
+			<input type="radio" ng-model="gen" value="male">Male
+			<input type="radio" ng-model="gen" value="female">Female
+		</form>
+		<br /><br />
+		<form>
+			Date of Birth: <input type = "text" ng-model="dob">
+		 </form>
+		<br /><br />
+		<form>
+			Height: <input type="text" ng-model="ht"> cms
+		</form>
+		<br /><br />
+		<form>
+			Weight: <input type="text" ng-model="wt"> kgs
+		</form>
+		<br /><br />
+		<div ng-switch="gen">
+			<div ng-switch-when="male"></div>
+			<div ng-switch-when="female"></div>
+		</div>
+		<button ng-click="">SUBMIT</button>
+		<button ng-click="reset()">RESET</button>
+	</div>
+</body>
+</html>

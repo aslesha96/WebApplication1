@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	
+</head>
+<body>
+	<div ng-app="MyAPP" ng-controller="Phycontroller">
+		<form>
+			FirstName: <input type="text" ng-model="Fname">
+		</form>
+		<br><br>
+		<form>
+			LastName: <input type="text" ng-model="Lname">
+		</form>
+		<br><br>
+		<form>
+            Telephone: <input type="text" ng-model="tel" />
+		</form>
+        <br /><br />
+        <form>
+            Address:
+            <br />
+            Line-1: <input type="text" ng-model="l1" />
+            <br />
+            Line-2: <input type="text" ng-model="l2" />
+            <br />
+            City: <input type="text" ng-model="city" />
+            <br />
+            State: <input type="text" ng-model="state" />
+            <br />
+            Pincode: <input type="text" ng-model="pin" />
+            <br />
+            Country: <input type="text" ng-model="country" />
+        </form>
+        <br /> <br />
+        <form>
+            Hospital: <input type="text" ng-model="hosp" />
+        </form>
+        <button ng-click="">SUBMIT</button>
+        <button ng-click="reset()">RESET</button>
+</div>
+</body>
+</html>
